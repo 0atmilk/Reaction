@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
 <html>
+
 <body style="background-color: #C1C8E4;">
 <head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
 <style>
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
 body {
   font-family: Dosis;
   background-colour: #C1C8E4;
@@ -13,18 +20,19 @@ body {
   text-align: right;
 }
 .circle {
+  align: center;
   height: 70px;
   width: 70px;
   background: #5AB9EA;
   border-radius: 70px;
   border: 15px solid #5AB9EA;
-  text-align: center;
   left: 110px;
   top: -10px;
-  z-index: -1;
+  z-index: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  font-size: 75%;
+  margin: auto;
 }
 h1{
   text-align: center;
@@ -35,6 +43,9 @@ h2{
   text-align: center;
   color: white;
   height: -200px;
+}
+h3{
+  text-size: 10px;
 }
 </style>
 </head>
@@ -53,9 +64,9 @@ h2{
 <h1>How reactive are you?</h1>
 <h2>Press the button corresponding to the circle that lights up in blue</h2>
 <body>
-  <div class="circle"></div>
-  <div style="display:flex;justify-content:center;align-items:center;">
-  <div style="width:70px;height:70px;"></div>
-
+<div class="wrapper">
+<button class="button">Start</button>
 </div>
 </body>
+<!--
+// <a href="http://start_test.com"> -->
