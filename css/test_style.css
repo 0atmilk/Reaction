@@ -109,19 +109,22 @@ p{
   font-weight: bold;
 }
 
-
-
 .topnav {
   text-align: right;
 }
+.round-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .circle {
+  object-position: center;
   align: center;
   height: 40px;
   width: 40px;
   background: #5AB9EA;
   border-radius: 40px;
   border: 15px solid #5AB9EA;
-  left: 110px;
   top: -10px;
   z-index: 0;
   display: flex;
@@ -242,7 +245,7 @@ input:checked + .overlay{
 	font-size: 20px;
 	margin: 30px 0;
 }
-.
+
 .username {
 	color: #005DDD;
 	text-decoration: none;
@@ -260,19 +263,30 @@ input:checked + .overlay{
 		opacity: 1;
 	}
 }
+
 .round-button_1 {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  vertical-align: middle;
+  line-height: normal;
+  display: inline-block;
 	width:25%;
 }
 
 .round-button_2 {
+  margin: auto;
+  vertical-align: middle;
+  line-height: normal;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 	width:25%;
 }
 
 .round-button_3 {
+  margin: auto;
+  vertical-align: middle;
+  line-height: normal;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
 	width:25%;
@@ -281,21 +295,56 @@ input:checked + .overlay{
 .round-button-circle_1 {
   margin-left: auto;
   margin-right: auto;
+  vertical-align: center;
+  line-height: normal;
+  display: inline-block;
 	width: 60%;
 	height:0;
 	padding-bottom: 60%;
   border-radius: 50%;
 	border:10px solid #5AB9EA;
-  overflow:hidden;
+  overflow: hidden;
   background: #5AB9EA;
 }
+
+.round-button-circle_2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  vertical-align: center;
+  line-height: normal;
+	width: 60%;
+	height:0;
+	padding-bottom: 60%;
+  border-radius: 50%;
+	border:10px solid #5AB9EA;
+  overflow: hidden;
+  background: #5AB9EA;
+}
+
+.round-button-circle_3 {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+	width: 60%;
+  vertical-align: center;
+  line-height: normal;
+  height:0;
+	padding-bottom: 60%;
+  border-radius: 50%;
+	border:10px solid #5AB9EA;
+  overflow: hidden;
+  background: #5AB9EA;
+}
+
 .round-button-circle:hover {
+    display:block;
+  	float:left;
 	background:#5AB9EA;
 }
 
 .round-button_1 a {
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
   display:block;
 	float:left;
 	width:100%;
@@ -304,7 +353,7 @@ input:checked + .overlay{
 	line-height:1em;
 	margin-top:-0.5em;
 
-	text-align:center;
+	text-align: center;
 	color:white;
   font-family:Dosis;
   font-size:1.2em;
@@ -312,8 +361,7 @@ input:checked + .overlay{
   text-decoration:none;
 }
 .round-button_2 a {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
     display:block;
   	float:left;
   	width:100%;
@@ -321,7 +369,6 @@ input:checked + .overlay{
     padding-bottom:50%;
   	line-height:1em;
   	margin-top:-0.5em;
-
   	text-align:center;
   	color:white;
     font-family:Dosis;
@@ -330,18 +377,18 @@ input:checked + .overlay{
     text-decoration:none;
   }
 
-.round-button_3 {
-      margin-left: auto;
-      margin-right: auto;
-      display:block;
-    	float: left;
-    	width:100%;
-    	padding-top:50%;
-      padding-bottom:50%;
-    	line-height:1em;
-    	margin-top:-0.5em;
-
-    	text-align:center;
+.round-button_3 a{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  float: left;
+  width:100%;
+  padding-top:50%;
+  padding-bottom:50%;
+  line-height:1em;
+  margin-top:-0.5em;
+  text-align:center;
     	color:white;
       font-family:Dosis;
       font-size:1.2em;
@@ -349,10 +396,7 @@ input:checked + .overlay{
       text-decoration:none;
 }
 
-  .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #ededed;
-	min-height: 100vh;
+.twitter {
+  width: 10%;
+  height: auto;
 }
