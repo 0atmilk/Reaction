@@ -396,6 +396,9 @@ input:checked + .overlay{
       text-decoration:none;
 }
 
+.circles-parent { text-align:center; }
+
+
 .twitter {
   width: 10%;
   height: auto;
