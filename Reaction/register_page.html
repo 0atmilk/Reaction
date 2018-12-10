@@ -4,11 +4,60 @@
 <head>
   <title>Register Page</title>
   <link rel="stylesheet" type="text/css" href="register_page.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
 </head>
 
 <body style="background-color: #C1C8E4;">
 
+<!-- burger-->
+
+    <input type="checkbox" id="m1" class="hidden-menu-ticker">
+  <label class="btn-menu" for="m1">
+    <span class="first"></span>
+    <span class="second"></span>
+    <span class="third"></span>
+  </label>
+  <ul class="hidden-menu">
+    <br></br>
+    <li><a href="whats_tyrd">  What's TYRD?</a></li>
+    <br></br>
+    <li><e href="">TYRD (Test Your Reactivity Daily), pronounced "tired", is about keeping track of
+      <br>how your brain works throughout the day. If you are all about self improvement
+      <br>and knowing thyself, this is an ideal opportunity to learn about how reactive
+      <br>you are throughout the day.
+      <br></br>
+      <br>By testing your reactivity at three seperate times of the day,
+      <br>we will help you figure out when you are truly most alert.
+      <br></br>
+      <br>We measure how fast you react to external stimuli and with this data we deliver you
+      <br>a report on your stats and whether you are more of a morning, afternoon or evening
+      <br>type of person.
+      <br></br>
+      <br>Even if you think you're most tired in the morning, it may be your most efficient time!
+      <br></br>
+      <a href="about.html"><label for="learn_more" class="learn_more">Learn more!</a>
+    </e></li>
+  </ul>
+
+<!-- login element -->
+
+<label for="btn" class="label">Log in</label>
+  <input type="checkbox" id="btn"/>
+  <div class="overlay">
+  	<div class="popup">
+  		<span class="title">Welcome back!</span>
+  		<input placeholder="Username" />
+  		<input placeholder="Password" />
+  		<label for="btn" class="login">Log in</label>
+    </div>
+  </div>
+
+<img src="../white_thin_logo.png" alt="tyrd" class="center">
+
+<!-- start of register page code-->
+
 <form action="action_page.php">
+  <div class="register_fields">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account. With an account you can keep track of your reaction times!</p>

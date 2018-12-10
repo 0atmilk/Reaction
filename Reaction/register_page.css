@@ -1,8 +1,279 @@
-* {box-sizing: border-box}
+
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+body {
+  font-family: Dosis;
+  background-colour: #C1C8E4;
+
+}
+
+
+
+/* burger */
+
+
+.hidden-menu {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: fixed;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #5AB9EA;
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  top: 0;
+  left: -105%;
+  transition: .5s linear;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.learn_more{
+  font-size: 20px;
+  color: #F7FE2E;
+  font-weight: lighter;
+}
+.hidden-menu a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #5680E9;
+  padding: 0 25px;
+  transition: .3s ease-out;
+}
+.hidden-menu a:hover {
+  background-color: #59585d;
+  color: #94754e;
+}
+
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: #fff;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: .3s ease-out;
+  z-index: 3;
+  width: 30px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+
+.btn-menu span {
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  background-color: white;
+  margin: 7px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+
+
+.btn-menu span.first {
+  margin-top: 0;
+}
+/* .hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+} */
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+/*burger end*/
+
+p{
+  size: 20px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+
+
+.topnav {
+  text-align: right;
+}
+.circle {
+  align: center;
+  height: 40px;
+  width: 40px;
+  background: #5AB9EA;
+  border-radius: 40px;
+  border: 15px solid #5AB9EA;
+  left: 110px;
+  top: -10px;
+  z-index: 0;
+  display: flex;
+  position: relative;
+  font-size: 120%;
+  margin: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+h1{
+  text-align: center;
+  color: white;
+  height: -200px;
+}
+h2{
+  text-align: center;
+  color: white;
+  height: -200px;
+}
+h3{
+  text-size: 10px;
+}
+#btn {
+  display: none;
+}
+body > .label {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: translate(-50%,-50%);
+
+
+}
+.label {
+	background: RGBa(205,205,205,0.1);
+  color: white;
+  font-weight: bold;
+	padding: 10px;
+	transition: 0.25s ease;
+	cursor: pointer;
+}
+.label:hover {
+	border-color: RGBa(0,0,0,0.2);
+}
+.label:active {
+	background: RGBa(0,0,0,0.2);
+}
+input:checked + .overlay{
+	opacity: 1;
+	z-index: 1;
+}
+.overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: RGBa(255,255,255,0.3);
+	opacity: 0;
+	z-index: -1;
+	transition: 0.5s ease;
+}
+.popup {
+	max-height: 90%;
+	position: absolute;
+	padding: 10px;
+	left: 50%;
+	top: 50%;
+  width: 300px;
+  overflow-y: auto;
+	background: #fff;
+	color: #999;
+	transform: translate(-50%,-50%);
+	border-radius: 5px;
+}
+.title {
+	font-size: 25px;
+	text-align: center;
+	display: block;
+}
+.popup input {
+	display: block;
+	margin: 20px 0;
+	width: 50%;
+	padding: 5px 0;
+	transition: 0.25s ease;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid transparent;
+	font-size: 15px;
+	outline: none;
+}
+.popup input:focus {
+	width: 90%;
+	border-bottom: 1px #aaa solid;
+}
+.login {
+	margin: auto;
+	display: block;
+	width: 50px;
+	background: #eee;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.25s ease;
+	text-align: center;
+}
+.login:hover {
+	background: #e0e0e0;
+}
+.popup p {
+	text-align: topnav;
+	font-size: 20px;
+	margin: 30px 0;
+}
+.
+.username {
+	color: #005DDD;
+	text-decoration: none;
+}
+.username:hover {
+	color: #00419A;
+	text-decoration: underline;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+/* register page start*/
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  text-align: left;
+  padding: 5px;
 }
 
 /* Full-width input fields */
