@@ -1,0 +1,103 @@
+
+
+  .vline
+  {
+      position: fixed;
+      top:250px;
+      left:50%;
+      bottom:60px; margin:0;
+      border:none;
+      border-right:solid 1px black;
+      z-index:10;
+      background-color: white;
+  }
+
+  @keyframes fadein {
+  	from {
+  		opacity: 0;
+  	}
+  	to {
+  		opacity: 1;
+  	}
+  }
+
+
+/*Game Start button*/
+
+  .round-button {
+    position: absolute;
+    right: 0;
+  	width:25%;
+  }
+  .round-button-circle {
+    position: absolute;
+    right: 0;
+  	width: 60%;
+  	height:0;
+  	padding-bottom: 60%;
+    border-radius: 50%;
+  	border:10px solid #5AB9EA;
+    overflow:hidden;
+    background: #5AB9EA;
+  }
+.round-button-circle:hover {
+  	background:#5AB9EA;
+  }
+.round-button a {
+  position: absolute;
+  right: 0;
+    display:block;
+  	float:left;
+  	width:100%;
+  	padding-top:50%;
+    padding-bottom:50%;
+  	line-height:1em;
+  	margin-top:-0.5em;
+
+  	text-align:center;
+  	color:white;
+    font-family:Dosis;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+  }
+
+.container {
+  position: absolute;
+  right: 0;
+  background-color: #ededed;
+  min-height: 100vh;
+  }
+
+/*End Game Start button*/
+
+h1{
+  text-align: center;
+  color: white;
+  height: -200px;
+}
+h2{
+  text-align: center;
+  color: white;
+  height: -200px;
+}
+h3{
+  text-size: 10px;
+  color: white;
+}
+
+h4{
+  color: white;
+}
+
+#btn {
+  display: none;
+}
+body > .label {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: translate(-50%,-50%);
+}
+
+x

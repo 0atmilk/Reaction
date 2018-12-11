@@ -31,6 +31,15 @@ body {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
+
+.smaller_banner {
+       height: 300px;
+       width: 300px;
+       overflow: hidden;
+       /*min-width: 300px;*/
+       height: 300px;   
+    }
+
 .learn_more{
   font-size: 20px;
   color: #F7FE2E;
@@ -49,6 +58,7 @@ body {
   background-color: #59585d;
   color: #94754e;
 }
+
 
 .hidden-menu-ticker {
   display: none;
