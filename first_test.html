@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+
+
 <html>
 
 <body style="background-color: #C1C8E4;">
 <head>
-    <link href="css/test_style.css" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
-
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+  <link href="css/test_style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js"></script>
 
 </head>
 
@@ -52,19 +54,41 @@
   </div>
 </div>
 
-<img src="white_thin_logo.png".png" alt="tyrd" class="center">
+<img src="white_thin_logo.png" alt="tyrd" class= "center" >
 
+
+<!-- start of page-->
 
 <h1>How reactive are you?</h1>
-<h2>Press the button corresponding to the circle that lights up in blue</h2>
+<h2>Press the button corresponding to the circle that lights up in blue. Press the button below when you are ready.</h2>
 <body>
+
+<!--button to start test-->
+
+<div class="circles-parent"</div>
+<button type="button" class="btn btn-primary btn-lg" onclick="setTimeout(reaction_test, 3000)">I'm Ready!</button>
+<script>
+function reaction_test() {
+  alert('Feature coming soon!');
+}
+</script>
+<br>
+
+<!-- circles-->
+
 <br>
 <div class="circles-parent">
-  <div class="round-button_1"><div class="round-button-circle_1"><a href="http://example.com" class="round-button_1">X</a></div></div>
-  <div class="round-button_2"><div class="round-button-circle_2"><a href="http://example.com" class="round-button_2">C</a></div></div>
-  <div class="round-button_3"><div class="round-button-circle_3"><a href="http://example.com" class="round-button_3">V</a></div></div>
+  <div class="round-button_1"><div class="round-button-circle_1"><a href="http://example.com" class="round-button_1">V</a></div></div>
+  <div class="round-button_2"><div class="round-button-circle_2"><a href="http://example.com" class="round-button_2">B</a></div></div>
+  <div class="round-button_3"><div class="round-button-circle_3"><a href="http://example.com" class="round-button_3">N</a></div></div>
 </div>
 
+<!--commenting out this twitter because I'm not sure why it's here but didn't want to delete!
 <a href="https://twitter.com/Teyerd1"><img src="twitter-icon.png" title="twitter" width="8" height="8" /></a>
+-->
 </body>
 </body>
+<br>
+<br>
+<div class="circles-parent">
+<button type="button" class="btn btn-primary btn-lg">Go to profile</button> <button type="button" class="btn btn-primary btn-lg">Register</button>
