@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
   <link href="css/test_style.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="script.js"></script>
+  <script type="text/javascript" src="Reaction/js/test_page.js"></script>
 
 </head>
 
@@ -60,15 +60,19 @@
 <!-- start of page-->
 
 <h1>How reactive are you?</h1>
-<h2>Press the button corresponding to the circle that lights up in blue. Press the button below when you are ready.</h2>
+<h2>Press the button corresponding to the circle that lights up in white. Press the button below when you are ready.</h2>
 <body>
 
 <!--button to start test-->
 
 <div class="circles-parent"</div>
-<button type="button" class="btn btn-primary btn-lg" onclick="setTimeout(reaction_test, 3000)">I'm Ready!</button>
+
+<button id="button-timer" type="button" class="btn btn-primary btn-lg" onclick="setTimeout(myFunction, 3000)">I'm Ready!</button>
+<br>
+<button id="button-timer-demo" type="button" class="btn btn-primary btn" onclick="start()">Demo</button>
+
 <script>
-function reaction_test() {
+function myFunction() {
   alert('Feature coming soon!');
 }
 </script>
@@ -78,9 +82,9 @@ function reaction_test() {
 
 <br>
 <div class="circles-parent">
-  <div class="round-button_1"><div class="round-button-circle_1"><a href="http://example.com" class="round-button_1">V</a></div></div>
-  <div class="round-button_2"><div class="round-button-circle_2"><a href="http://example.com" class="round-button_2">B</a></div></div>
-  <div class="round-button_3"><div class="round-button-circle_3"><a href="http://example.com" class="round-button_3">N</a></div></div>
+  <div class="round-button_1"><div class="round-button-circle_1" onclick="checkSelectedButton(this)"><a href="" class="round-button_1">V</a></div></div>
+  <div class="round-button_2"><div class="round-button-circle_1" onclick="checkSelectedButton(this)"><a href="" class="round-button_2">B</a></div></div>
+  <div class="round-button_3"><div class="round-button-circle_1" onclick="checkSelectedButton(this)"><a href="" class="round-button_3">N</a></div></div>
 </div>
 
 <!--commenting out this twitter because I'm not sure why it's here but didn't want to delete!
