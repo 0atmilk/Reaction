@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<body style="background-color: #C1C8E4;">
+<head>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+  <link href="css/test_style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="Reaction/js/test_page.js"></script>
+
+</head>
+
+<body>
+  <input type="checkbox" id="m1" class="hidden-menu-ticker">
+<label class="btn-menu" for="m1">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+<ul class="hidden-menu">
+  <br></br>
+  <li><a href="whats_tyrd">  What's TYRD?</a></li>
+  <br></br>
+  <li><e href="">TYRD (Test Your Reactivity Daily), pronounced "tired", is about keeping track of
+    <br>how your brain works throughout the day. If you are all about self improvement
+    <br>and knowing thyself, this is an ideal opportunity to learn about how reactive
+    <br>you are throughout the day.
+    <br></br>
+    <br>By testing your reactivity at three seperate times of the day,
+    <br>we will help you figure out when you are truly most alert.
+    <br></br>
+    <br>We measure how fast you react to external stimuli and with this data we deliver you
+    <br>a report on your stats and whether you are more of a morning, afternoon or evening
+    <br>type of person.
+    <br></br>
+    <br>Even if you think you're most tired in the morning, it may be your most efficient time!
+    <br></br>
+    <a href="about.html"><label for="learn_more" class="learn_more">Who are we?</a>
+  </e></li>
+</ul>
+
+<label for="btn" class="label">Log in</label>
+  <input type="checkbox" id="btn"/>
+  <div class="overlay">
+  	<div class="popup">
+  		<span class="title">Welcome back!</span>
+  		<input placeholder="Username" />
+  		<input placeholder="Password" type="password" />
+  		<label for="btn" class="login">Log in</label>
+    </div>
+  </div>
+</div>
+
+<img src="white_thin_logo.png" alt="tyrd" class= "center" >
+
+
+<!-- start of page-->
+
+<h1>How reactive are you?</h1>
+<h2>Press the button corresponding to the circle that lights up in white. Press the button below when you are ready.</h2>
+<body>
+
+<!--button to start test-->
+
+<div class="circles-parent"</div>
+
+<button id="button-timer" type="button" class="btn btn-primary btn-lg" onclick="setTimeout(myFunction, 3000)">I'm Ready!</button>
+<br>
+<button id="button-timer-demo" type="button" class="btn btn-primary btn" onclick="start()">Demo</button>
+
+<script>
+function myFunction() {
+  alert('Feature coming soon!');
+}
+</script>
+<br>
+
+<!-- circles-->
+
+<br>
+<div class="circles-parent">
+  <div class="round-button_1"><div class="round-button-circle_1" onclick="checkSelectedButton(this)"><a href="" class="round-button_1">V</a></div></div>
+  <div class="round-button_2"><div class="round-button-circle_1" onclick="checkSelectedButton(this)"><a href="" class="round-button_2">B</a></div></div>
+  <div class="round-button_3"><div class="round-button-circle_1" onclick="checkSelectedButton(this)"><a href="" class="round-button_3">N</a></div></div>
+</div>
+
+<!--commenting out this twitter because I'm not sure why it's here but didn't want to delete!
+<a href="https://twitter.com/Teyerd1"><img src="twitter-icon.png" title="twitter" width="8" height="8" /></a>
+-->
+</body>
+</body>
+<br>
+<br>
+<div class="circles-parent">
+<button type="button" class="btn btn-primary btn-lg">Go to profile</button> <button type="button" class="btn btn-primary btn-lg" onclick= window.location.href="Reaction/register_page.html" >Register</button>
