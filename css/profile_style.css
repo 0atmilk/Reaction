@@ -144,11 +144,13 @@ h1{
   height: -200px;
 }
 h2{
-  font-size: 5.9vw;
+  top: 24%;
   text-align: center;
   color: white;
-  height: -200px;
+  top: 40%;
+  left: 50%;
 }
+
 h3{
 
   text-size: 10px;
@@ -157,12 +159,24 @@ h3{
 }
 
 h4 {
-
   color: white;
   font-weight: normal;
 }
 #btn {
   display: none;
+}
+
+h5 {
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+  height: -50px;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 /*table*/
 
